@@ -4,27 +4,27 @@
     "content": {
         "metaDataVersion": "1.1.0",
         "name": "com.microchip.mcu8.studio.project.avr128da48-t10-touch-example-studio",
-        "version": "",
-        "displayName": "",
+        "version": "1.0.0",
+        "displayName": "Touch example using T10 and AVR128DA48",
         "projectName": "avr128da48-t10-touch-example-studio",
-        "shortDescription": "",
+        "shortDescription": "This example demonstrates touch application using AVR128DA48 Curiosity Nano with Curiosity Nano Touch Adapter Kit and T10 extension board.",
         "ide": {
             "name": "STUDIO",
-            "semverRange": ""
+            "semverRange": ">=7.0.2542"
         },
         "compiler": [
 			{
-				"name": "",
-				"semverRange": ""
+                "name": "AVR GCC",
+                "semverRange": "^5.4.0"
 			}
 		],
         "dfp": {
-            "name": "",
-            "semverRange": ""
+            "name": "AVR-Dx_DFP",
+            "semverRange": "1.6.76"
         },
         "configurator": {
-            "name": "",
-            "semverRange": ""
+            "name": "START",
+            "semverRange": ">=1.8.491"
         },
         "device": {
             "metaDataVersion": "1.0.0",
@@ -32,16 +32,39 @@
             "content": {
                 "metaDataVersion": "1.0.0",
                 "category": "com.microchip.device",
-                "name": "",
+                "name": "AVR128DA48",
                 "versionRange": "*"
             }
         },
-        "author": "",
+        "author": "Sean Conlon",
         "subcategories": [
+            "START",
+            "Touch",
+            [
+                "Peripherals", "RTC"
+        	],
+            [
+                "Peripherals", "USART"
+            ],
+            [
+                "Peripherals", "PTC"
+            ]
         ],
-        "peripherals": [
+        "peripherals": 
+        [ 
+            "RTC", "USART", "PTC"
         ],
         "keywords": [
+            "Capacitive touch sensing",
+            "QTouch",
+            "PTC w Driven Shield (Peripheral Touch Controller)",
+            "Human Interface",
+            "Slider",
+            "Button",
+            "Sensor",
+            "Sensors",
+            "Touch sensing",
+            "PTC"
         ],
 		"additionalData": {
 			"longDescription": {
